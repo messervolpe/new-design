@@ -13,6 +13,9 @@
     --bg-dark: var(--black);
     --bg-light: var(--white);
     --bg-medium: var(--gray);
+
+    /*sizes*/
+    --size-s: 1rem;
 }
 
 
@@ -54,6 +57,8 @@ button, summary {cursor: pointer;}
 
 /* TO BE DONE layout */
 
+
+.stack--s > * + * { margin-block-start: var(--size-s);}
 
 body {
     font-family: "Newsreader", serif;
