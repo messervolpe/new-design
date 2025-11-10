@@ -1,3 +1,21 @@
+:root {
+    /*colors*/
+    --black: #3E3E3E;
+    --white: #FAFAF9;
+    --gray: #F3F1EF;
+
+    --blue-100: #DBDBF9;
+
+
+    --text-dark: var(--black);
+    --text-light: var(--white);
+
+    --bg-dark: var(--black);
+    --bg-light: var(--white);
+    --bg-medium: var(--gray);
+}
+
+
 /*
 * === RESET ===
 */
@@ -28,13 +46,13 @@ input, button, textarea, select {
     font: inherit;
 }
 
-button {cursor: pointer;}
+button, summary {cursor: pointer;}
 
 /*
 * === UTILITIES ===
 */
 
-/* layout */
+/* TO BE DONE layout */
 
 /*
 * === TYPOGRAPHY ===
@@ -43,7 +61,8 @@ button {cursor: pointer;}
 body {
     font-family: "Newsreader", serif;
     line-height: 140%;
-    /* color:  */
+    color: var(--text-dark);
+    background-color: var(--bg-light);
 }
 
 .heading-1 {
@@ -60,17 +79,99 @@ body {
 }
 
 .heading-3 {
-    font-size: 1rem;
+    font-size: 0.85rem;
     width: fit-content;
     line-height: 100%;
     text-transform: uppercase;
     font-weight: 400;
-    background-color: rgb(206, 184, 228);
+    background-color: var(--blue-100);
     padding-top: 4px;
 }
 
-
 .p--big {
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 110%;
 }
+
+/*
+* === COMPONENTS ==
+*/
+
+/* — buttons & links — */
+
+button {
+    display: flex;
+    align-items: center;
+    min-height: 2rem;
+    min-width: 4rem;
+    padding: 4px;
+    border: transparent;
+    color: var(--text-light);
+    background-color: var(--bg-dark);
+}
+
+a {
+    display: flex;
+    align-items: center;
+    min-height: 2rem;
+    width: fit-content;
+    min-width: 4rem;
+    padding: 0 4px;
+    text-decoration: none;
+}
+
+button:hover, a:hover {
+    text-decoration: underline;
+}
+
+a:hover {
+    background-color: var(--bg-medium);
+}
+
+a--current {
+    text-decoration: underline;
+}
+
+/* — accordion — */
+
+summary {
+  list-style: none;
+  position: relative;
+  width: fit-content;
+  margin-bottom: 30px;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary img {
+  transform: rotate(90deg);
+}
+
+summary::before {
+  content:'';
+  position: absolute;
+  background-color: var(--text-dark);
+  width: 0%;
+  height: 0px;
+  bottom: 0;
+  left:4px;
+  transition: 200ms ease-in;
+}
+
+summary:hover::before {
+  height: 1px;
+  width: 100%;
+}
+
+
+
+/* summary:hover img {
+    animation: bounce 400ms ease-out;
+}
+
+@keyframes bounce  {
+    from {
+        transform: translateX(-8px);
+    }
+} */
