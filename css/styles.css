@@ -154,7 +154,6 @@ summary {
     align-items: center;
     gap: 4px;
     list-style: none;
-    position: relative;
     width: fit-content;
     min-height: 2rem;
 }
@@ -166,39 +165,45 @@ details[open] summary svg {
   transform: rotate(90deg);
 }
 
-summary::before {
+.accordion::before {
   content:'';
   position: absolute;
   background-color: var(--text-dark);
   width: 0%;
-  height: 1px;
+  height: 0.5px;
   bottom: 0;
   left:4px;
   transition: 200ms ease-in;
 }
 
-summary:hover::before {
+.accordion:hover::before {
   width: 100%;
 }
 
 /* — navi — */
 
+.menu-container {
+    position: sticky;
+    background-color: var(--bg-light);
+    top: 0;
+}
+
+.menu-title {
+    width: fit-content;
+}
+
+.menu-title:hover {
+    background-color: var(--bg-medium);
+    text-decoration: underline;
+}
 
 nav {
-    padding: 1rem 0;
-}
-
-.navi-container {
-    width: fit-content;
-    min-width: 200px;
-    padding: 0.5rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--black);
     background-color: var(--bg-light);
-    border: 1px solid transparent;
+    position: absolute;
+    min-width: 200px;  
+    width: fit-content;
 }
-
-.navi-container[open]  {
-  border: 1px solid var(--black);
-}
-
 
   
