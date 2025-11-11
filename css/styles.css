@@ -57,6 +57,10 @@ button, summary {cursor: pointer;}
 
 /* TO BE DONE layout */
 
+.m--center {margin: 0px auto;}
+
+.flex {display: flex;}
+
 
 .stack--s > * + * { margin-block-start: var(--size-s);}
 
@@ -65,7 +69,7 @@ body {
     line-height: 140%;
     color: var(--text-dark);
     background-color: var(--bg-light);
-    margin: 2rem;
+    margin: 1rem;
 }
 
 
@@ -110,9 +114,10 @@ body {
 button {
     display: flex;
     align-items: center;
+    gap: 4px;
     min-height: 2rem;
     min-width: 2rem;
-    padding: 4px;
+    padding: 0 8px;
     border: transparent;
     color: var(--text-light);
     background-color: var(--bg-dark);
@@ -121,6 +126,7 @@ button {
 a {
     display: flex;
     align-items: center;
+    gap: 4px;
     min-height: 2rem;
     width: fit-content;
     min-width: 4rem;
@@ -144,10 +150,13 @@ a--current {
 /* — accordion — */
 
 summary {
-  list-style: none;
-  position: relative;
-  width: fit-content;
-  margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    list-style: none;
+    position: relative;
+    width: fit-content;
+    min-height: 2rem;
 }
 summary::-webkit-details-marker {
   display: none;
@@ -162,25 +171,34 @@ summary::before {
   position: absolute;
   background-color: var(--text-dark);
   width: 0%;
-  height: 0px;
+  height: 1px;
   bottom: 0;
   left:4px;
   transition: 200ms ease-in;
 }
 
 summary:hover::before {
-  height: 1px;
   width: 100%;
 }
 
+/* — navi — */
 
 
-/* summary:hover img {
-    animation: bounce 400ms ease-out;
+nav {
+    padding: 1rem 0;
 }
 
-@keyframes bounce  {
-    from {
-        transform: translateX(-8px);
-    }
-} */
+.navi-container {
+    width: fit-content;
+    min-width: 200px;
+    padding: 0.5rem;
+    background-color: var(--bg-light);
+    border: 1px solid transparent;
+}
+
+.navi-container[open]  {
+  border: 1px solid var(--black);
+}
+
+
+  
