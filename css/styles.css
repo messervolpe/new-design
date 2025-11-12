@@ -15,6 +15,7 @@
     --bg-medium: var(--gray);
 
     /*sizes*/
+    --size-xs: 0.5rem;
     --size-s: 1rem;
 }
 
@@ -51,27 +52,6 @@ input, button, textarea, select {
 
 button, summary {cursor: pointer;}
 
-/*
-* === UTILITIES ===
-*/
-
-/* TO BE DONE layout */
-
-.m--center {margin: 0px auto;}
-
-.flex {display: flex;}
-
-
-.stack--s > * + * { margin-block-start: var(--size-s);}
-
-body {
-    font-family: "Newsreader", serif;
-    line-height: 140%;
-    color: var(--text-dark);
-    background-color: var(--bg-light);
-    margin: 1rem;
-}
-
 
 /*
 * === TYPOGRAPHY ===
@@ -104,6 +84,74 @@ body {
     font-size: 1.6rem;
     line-height: 110%;
 }
+
+/*
+* === UTILITIES ===
+*/
+
+.m--center {margin: 0px auto;}
+
+.flex {display: flex;}
+
+.stack--xs > * + * { margin-block-start: var(--size-xs);}
+.stack--s > * + * { margin-block-start: var(--size-s);}
+
+@media (min-width: 700px) {
+
+    .flex--desk {display: flex;}
+    .justify--space-between--desk {justify-content: space-between;}
+    .items--center--desk {align-items: center;}
+    .reverse--desk {flex-direction: row-reverse;}
+
+    .flex--desk > * + * { margin-block-start: 0;}
+
+}
+
+
+/*
+* === LAYOUT ===
+*/
+
+body {
+    font-family: "Newsreader", serif;
+    line-height: 140%;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+}
+
+header {
+    padding: 1rem;
+    position:sticky;
+    top:0;
+    background-color: var(--bg-light);
+}
+
+main {
+    padding: 2rem
+}
+
+
+/* — navi — */
+
+.menu-title {
+    width: fit-content;
+}
+
+.menu-title:hover {
+    background-color: var(--bg-medium);
+    text-decoration: underline;
+}
+
+nav {
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--black);
+    background-color: var(--bg-light);
+    position: absolute;
+    min-width: 200px;  
+    width: fit-content;
+}
+
+
 
 /*
 * === COMPONENTS ==
@@ -154,7 +202,6 @@ summary {
     align-items: center;
     gap: 4px;
     list-style: none;
-    width: fit-content;
     min-height: 2rem;
 }
 summary::-webkit-details-marker {
@@ -180,30 +227,6 @@ details[open] summary svg {
   width: 100%;
 }
 
-/* — navi — */
 
-.menu-container {
-    position: sticky;
-    background-color: var(--bg-light);
-    top: 0;
-}
-
-.menu-title {
-    width: fit-content;
-}
-
-.menu-title:hover {
-    background-color: var(--bg-medium);
-    text-decoration: underline;
-}
-
-nav {
-    padding: 1rem 1.5rem;
-    border: 1px solid var(--black);
-    background-color: var(--bg-light);
-    position: absolute;
-    min-width: 200px;  
-    width: fit-content;
-}
 
   
