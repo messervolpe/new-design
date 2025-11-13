@@ -255,3 +255,37 @@ details[open] summary svg {
 .link1:hover ~ .img-hover-test {
     background-image: url("/graphics/photo3.jpg");
 }
+
+
+
+
+.map {
+    width: 300px;
+    height: 300px;
+    background-image: url("/graphics/map/base.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50px;
+    left: 300px;
+}
+
+.ch1:hover ~ .map {
+    background-image: url("/graphics/map/ch1.png");
+}
+
+.ch2:hover ~ .map {
+    background-image: url("/graphics/map/ch2.png");
+}
+
+.ch3:hover ~ .map {
+    background-image: url("/graphics/map/ch3.png");
+}
+
+.ch4:hover ~ .map {
+    background-image: url("/graphics/map/ch4.png");
+}
+
+.ch5:hover ~ .map {
+    background-image: url("/graphics/map/ch5.png");
+}
