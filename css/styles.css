@@ -200,7 +200,7 @@ a:hover {
     background-color: var(--bg-medium);
 }
 
-a--current {
+.a--active {
     text-decoration: underline;
 }
 
@@ -238,4 +238,20 @@ details[open] summary svg {
 
 
 
-  
+
+.img-hover-test {
+    width: 400px;
+    height: 400px;
+    background-image: url("/graphics/photo1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.link2:hover ~ .img-hover-test {
+    background-image: url("/graphics/photo2.jpg");
+}
+
+.link1:hover ~ .img-hover-test {
+    background-image: url("/graphics/photo3.jpg");
+}
