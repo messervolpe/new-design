@@ -89,7 +89,8 @@ button, summary {cursor: pointer;}
 * === UTILITIES ===
 */
 
-.m--center {margin: 0px auto;}
+/* .m--center {margin: 0px auto;} */
+
 
 .flex {display: flex;}
 
@@ -100,11 +101,12 @@ button, summary {cursor: pointer;}
 
     .flex--desk {display: flex;}
     .justify--space-between--desk {justify-content: space-between;}
+    .justify--center--desk {justify-content: center;}
+
     .items--center--desk {align-items: center;}
     .reverse--desk {flex-direction: row-reverse;}
 
     .flex--desk > * + * { margin-block-start: 0;}
-
 }
 
 
@@ -149,6 +151,13 @@ nav {
     position: absolute;
     min-width: 200px;  
     width: fit-content;
+}
+
+@media (min-width: 700px) {
+    .menu-container {
+        position: absolute;
+        left: 1rem;
+    }
 }
 
 
