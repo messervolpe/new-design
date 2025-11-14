@@ -279,7 +279,7 @@ details[open] summary svg {
 .map {
     width: 400px;
     height: 400px;
-    background-image: url("/graphics/map/base.png");
+    background-image: url("../graphics/map/base.png");
     background-size: contain;
     background-repeat: no-repeat;
 
