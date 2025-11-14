@@ -243,24 +243,37 @@ details[open] summary svg {
 .img-hover-test {
     width: 400px;
     height: 400px;
-    background-image: url("/graphics/photo1.jpg");
+    background-image: url("../graphics/photo1.jpg");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 
 .link2:hover ~ .img-hover-test {
-    background-image: url("/graphics/photo2.jpg");
+    background-image: url("../graphics/photo2.jpg");
 }
 
 .link1:hover ~ .img-hover-test {
-    background-image: url("/graphics/photo3.jpg");
+    background-image: url("../graphics/photo3.jpg");
 }
 
 
 /* .ch1, .ch2, .ch3, .ch4, .ch5 {width: fit-content;} */
 .map-container {
     width: fit-content;
+}
+
+.map-container::after{
+    position: absolute; 
+    width: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: 
+        url("../graphics/map/ch1.png")
+        url("../graphics/map/ch2.png")
+        url("../graphics/map/ch3.png")
+        url("../graphics/map/ch4.png")
+        url("../graphics/map/ch5.png");
 }
 
 .map {
@@ -286,21 +299,21 @@ details[open] summary svg {
 }
 
 .ch1:hover ~ .map {
-    background-image: url("/graphics/map/ch1.png");
+    background-image: url("../graphics/map/ch1.png");
 }
 
 .ch2:hover ~ .map {
-    background-image: url("/graphics/map/ch2.png");
+    background-image: url("../graphics/map/ch2.png");
 }
 
 .ch3:hover ~ .map {
-    background-image: url("/graphics/map/ch3.png");
+    background-image: url("../graphics/map/ch3.png");
 }
 
 .ch4:hover ~ .map {
-    background-image: url("/graphics/map/ch4.png");
+    background-image: url("../graphics/map/ch4.png");
 }
 
 .ch5:hover ~ .map {
-    background-image: url("/graphics/map/ch5.png");
+    background-image: url("../graphics/map/ch5.png");
 }
