@@ -125,6 +125,7 @@ body {
 header {
     padding: 1rem;
     position:sticky;
+    z-index: 1;
     top:0;
     background-color: var(--bg-light);
 }
@@ -142,7 +143,6 @@ main {
 
 .menu-title:hover {
     background-color: var(--bg-medium);
-    text-decoration: underline;
 }
 
 nav {
@@ -184,6 +184,7 @@ button {
 a {
     display: flex;
     align-items: center;
+    position: relative;
     gap: 4px;
     min-height: 2rem;
     width: fit-content;
@@ -193,22 +194,39 @@ a {
     color: var(--text-dark);
 }
 
-button:hover, a:hover {
+/* button:hover, a:hover {
     text-decoration: underline;
-}
+} */
 
 a:hover {
     background-color: var(--bg-medium);
 }
 
-.a--active {
-    text-decoration: underline;
+a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: var(--bg-dark);
+    transition: 200ms;
+}
+
+a:hover::after {
+    width: 100%;
+} 
+
+.a--active::after {
+    width: 100%;
 }
 
 /* — accordion — */
 
 summary {
     display: flex;
+    width: fit-content;
+    position: relative;
     align-items: center;
     gap: 4px;
     list-style: none;
@@ -222,20 +240,25 @@ details[open] summary svg {
   transform: rotate(90deg);
 }
 
-.accordion::before {
-  content:'';
-  position: absolute;
-  background-color: var(--text-dark);
-  width: 0%;
-  height: 0.5px;
-  bottom: 0;
-  left:4px;
-  transition: 200ms ease-in;
+.accordion::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: var(--bg-dark);
+    transition: 200ms;
+
 }
 
-.accordion:hover::before {
-  width: 100%;
+details:hover .accordion::after {
+    width: 100%;
 }
+
+
+
+
 
 
 
@@ -267,7 +290,6 @@ details[open] summary svg {
     position: absolute; 
     width: 0;
     overflow: hidden;
-    z-index: -1;
     content: 
         url("../graphics/map/ch1.png")
         url("../graphics/map/ch2.png")
