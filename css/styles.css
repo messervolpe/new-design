@@ -102,6 +102,7 @@ button, summary {cursor: pointer;}
 .m--center { margin: 0 auto;}
 
 .flex {display: flex;}
+.flex-wrap {flex-wrap: wrap;}
 
 .gap--xs{gap:var(--size-xs)}
 
