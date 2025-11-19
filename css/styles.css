@@ -99,13 +99,11 @@ button, summary {cursor: pointer;}
 
 /* .m--center {margin: 0px auto;} */
 
-.m--center {
-    margin: 0 auto;
-}
+.m--center { margin: 0 auto;}
 
-.flex {
-    display: flex;
-}
+.flex {display: flex;}
+
+.gap--xs{gap:var(--size-xs)}
 
 .stack--xs > * + * { margin-block-start: var(--size-xs);}
 .stack--s > * + * { margin-block-start: var(--size-s);}
@@ -192,7 +190,7 @@ button, a, summary {
     transition: 100ms;
 }
 
-button {
+button, .a--inverted {
     padding: 0 8px;
     color: var(--text-light);
     background-color: var(--bg-dark);
