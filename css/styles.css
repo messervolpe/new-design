@@ -213,6 +213,10 @@ summary::-webkit-details-marker {
   display: none;
 }
 
+details[open] summary{
+  border-bottom: 1px solid var(--bg-dark);
+}
+
 details[open] summary svg {
   transform: rotate(90deg);
 }
