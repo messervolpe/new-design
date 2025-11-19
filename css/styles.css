@@ -213,7 +213,7 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-details[open] summary{
+details[open] summary {
   border-bottom: 1px solid var(--bg-dark);
 }
 
