@@ -233,7 +233,7 @@ button:hover, a:hover, details:hover summary {
     border-bottom: 1px solid var(--bg-dark);
 }
 
-details:hover .menu-title {
+details:hover .menu-title, details[open] .menu-title {
     border-bottom: 1px solid transparent;
 }
 
