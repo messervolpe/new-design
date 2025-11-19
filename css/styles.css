@@ -5,6 +5,14 @@
     --gray: #F3F1EF;
 
     --blue-100: #DBDBF9;
+    --blue-200: #AFBEFD;
+    --blue-300: #75A8FF;
+    --blue-400: #5172EC;
+
+    --orange-100: #FFA680;
+    --orange-200: #FFC466;
+    --orange-300: #F88644;
+    --orange-400: #F5683D;
 
 
     --text-dark: var(--black);
@@ -91,9 +99,13 @@ button, summary {cursor: pointer;}
 
 /* .m--center {margin: 0px auto;} */
 
-.m--center{margin: 0 auto;}
+.m--center {
+    margin: 0 auto;
+}
 
-.flex {display: flex;}
+.flex {
+    display: flex;
+}
 
 .stack--xs > * + * { margin-block-start: var(--size-xs);}
 .stack--s > * + * { margin-block-start: var(--size-s);}
@@ -131,7 +143,7 @@ header {
 }
 
 main {
-    padding: 1rem
+    padding: 1rem;
 }
 
 
@@ -139,6 +151,7 @@ main {
 
 .menu-title {
     width: fit-content;
+    border: 1px solid transparent;
 }
 
 .menu-title:hover {
@@ -146,7 +159,7 @@ main {
 }
 
 nav {
-    padding: 1rem 1.5rem;
+    padding: 1rem;
     border: 1px solid var(--black);
     background-color: var(--bg-light);
     position: absolute;
@@ -162,76 +175,40 @@ nav {
 }
 
 
-
 /*
 * === COMPONENTS ==
 */
 
 /* — buttons & links — */
 
-button {
+button, a, summary {
     display: flex;
     align-items: center;
     gap: 4px;
+    width: fit-content;
     min-height: 2rem;
     min-width: 2rem;
+    border: 1px solid transparent;
+    transition: 100ms;
+}
+
+button {
     padding: 0 8px;
-    border: transparent;
     color: var(--text-light);
     background-color: var(--bg-dark);
 }
 
 a {
-    display: flex;
-    align-items: center;
-    position: relative;
-    gap: 4px;
-    min-height: 2rem;
-    width: fit-content;
-    min-width: 4rem;
-    padding: 0 4px;
     text-decoration: none;
     color: var(--text-dark);
-}
-
-/* button:hover, a:hover {
-    text-decoration: underline;
-} */
-
-a:hover {
-    background-color: var(--bg-medium);
-}
-
-a::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    content: "";
-    width: 0;
-    height: 1px;
-    background-color: var(--bg-dark);
-    transition: 200ms;
-}
-
-a:hover::after {
-    width: 100%;
-} 
-
-.a--active::after {
-    width: 100%;
 }
 
 /* — accordion — */
 
 summary {
-    display: flex;
-    width: fit-content;
-    position: relative;
-    align-items: center;
-    gap: 4px;
     list-style: none;
-    min-height: 2rem;
 }
+
 summary::-webkit-details-marker {
   display: none;
 }
@@ -240,21 +217,22 @@ details[open] summary svg {
   transform: rotate(90deg);
 }
 
-.accordion::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    content: "";
-    width: 0;
-    height: 1px;
-    background-color: var(--bg-dark);
-    transition: 200ms;
+/* —--states-— */
 
+button:hover, a:hover, details:hover summary {
+    color: var(--text-dark);
+    background-color: var(--bg-medium);
+    border-bottom: 1px dashed var(--bg-dark);
 }
 
-details:hover .accordion::after {
-    width: 100%;
+.a--active {
+    border-bottom: 1px solid var(--bg-dark);
 }
+
+details:hover .menu-title {
+    border-bottom: 1px solid transparent;
+}
+
 
 
 
