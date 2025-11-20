@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <header class="stack--xs flex--desk justify--center--desk items--center--desk">
+    <header class="stack--xs flex--desk justify--center--desk items--center--desk" style="position: relative;">
         <h1 class="heading-1">M/V</h1>
         <details class="menu-container" open>
             <summary class="menu-title">
@@ -26,27 +26,31 @@
                 width="32"
                 />
             </summary>
-            <nav class="stack--xs">
+            <nav class="stack--xs" style="position: relative;">
                 <a href="design-system.html">design system</a>
                 <a href="prompts.html" >prompts</a>
+                <a href="archive.html">archive</a>
             </nav>
         </details>
     </header>
         
     <main class="stack--m homepage--container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ex nemo, quasi dicta perferendis rem adipisci numquam ratione reprehenderit omnis dolore aliquam minus molestiae consequatur animi. Ipsa temporibus rerum error?</p>
 
-        <div class="flex flex-wrap gap--xs">
+        
+        <div class="flex flex-wrap gap--xs" style="max-width: 200px;">
             <h2 class="heading-2">On drawing and its journeys</h2>
             <a href="odj.html" class="a--inverted">Open<svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(4 6)"><path d="m9.5.497 4 4.002-4 4.001"/><path d="m.5 4.5h13"/></g></svg>
-        </a>
+            </a>
         </div>
 
-        <div class="img-hover-test"></div>
-    </main>
+        <div class="flex">
+            <img src="graphics/photo1.jpg" alt="" style="width: 100%;">
+            <img src="graphics/photo2.jpg" alt="" style="width: 100%;">
+            <img src="graphics/photo3.jpg" alt="" style="width: 100%;">
+        </div>
 
     
-    
+    </main>
 
 </body>
 </html>

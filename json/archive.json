@@ -1,0 +1,310 @@
+{
+  "months": [
+     {
+    "name": "November",
+    "categories": [
+        {
+        "name": "read",
+        "entries": [
+          "A Yankee at King Arthur's court, Mark Twain",
+          "KWDW, Nagoski",
+          "Frauen & Macht, Mary Beard",
+          "Es war schon immer ziemlich kalt, Ela Mayer - DNF",
+          "Allegro Pastel, Leif Randt"]
+        },
+        {
+        "name": "playing",
+        "entries": ["A short Hike"]
+        },
+        {
+        "name": "watched",
+        "entries": [
+          "The fellowship of the ring", 
+          "The two towers",
+          "The return of the king",
+          "Arrival"]
+        }
+    ]},
+    {
+    "name": "October",
+    "categories": [
+        {
+        "name": "read",
+        "entries": [
+          "The picture of Dorian Gray, Oscar Wilde  ✓",
+          "Balthazar Jones and the Tower of London Zoo, Julia Stuart  ✓",
+          "Drei Mann in einem Boot, Jerome K. Jerome",
+          "The Heart Goes Last, Margaret Atwood ✓",
+          "(K)eine Mutter, Jeanne Diesteldorf ✓"]
+        },
+        {
+        "name": "playing",
+        "entries": ["**"]
+        },
+        {
+        "name": "watched",
+        "entries": ["**"]
+        }
+    ]},
+    {
+    "name": "September",
+    "categories": [
+        {
+        "name": "read",
+        "entries": [
+          "The Wind in the Willows, Kenneth Grahame ✓",
+          "Profit over people, Noam Chommsky",
+          "Global discontents, Noam Chommsky",
+          "Drei Mann in einem Boot, Jerome K. Jerome"
+        ]},
+        {
+        "name": "playing",
+        "entries": ["**"]
+        },
+        {
+        "name": "watched",
+        "entries": ["The big Lebwoski", "Encounter at the end of the world"]
+        }
+    ]
+    },
+    {
+    "name": "August",
+    "categories": [
+        {
+        "name": "read",
+        "entries": [
+          "Fame, Daniel Kehlmann ✓", 
+          "Nightfall and other stories, Asimov ✓",
+          "Ci vediamo ad Agosto, Gabriel García Márquez ✓",
+          "Caves of Steel, Asimov ✓",
+          "Naked Sun, Asimov ✓", "The end of eternity, Asimov ✓"
+        ]},
+        {
+        "name": "playing",
+        "entries": ["Borderlands 2 (Mattia)"]
+        },
+        {
+        "name": "watched",
+        "entries": ["Firefly <3 <3", "Kiki delivery service"]
+        }
+    ]
+    },
+    {
+      "name": "July",
+      "categories": [
+        {
+          "name": "read",
+          "entries": [
+            "Orbital, Samantha Harvey ✓",
+            "Mord im Orient Express, A. Christie ✓",
+            "Maame, Jessica George ✓",
+            "La terra, il cielo, i corvi GN ✓",
+            "Non stancarti di andare GN ✓",
+            "Wild Thoughts from wild Places, -",
+            "Homo Faber, Max Frisch",
+            "Poirot erste Fälle"
+          ]
+        },
+        {
+          "name": "playing",
+          "entries": [
+            "Chants of Shannar ✓"
+          ]
+        },
+        {
+          "name": "watched",
+          "entries": [
+            "Quinns Quest"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "June",
+      "categories": [
+        {
+          "name": "read",
+          "entries": [
+            "Childhood's end, Arthur Clarke ✓",
+            "West, West Texas, Tillie Walden (GN) ✓",
+            "Randevouz with Rama, Arthur Clarke ✓",
+            "Il Deserto dei Tartari, Dino Buzzati ✓",
+            "I Ragazzi, Edith Wharton ✓",
+            "Being Logical: A Guide to Good Thinking ✓",
+            "Tonio Kröger, Thomas Mann ✓",
+            "Sull'amore e altri demoni, Gabriel García Márquez ✓",
+            "Animalia, Julio Cortázar",
+            "21 Racconti, Ernest Hemingway",
+            "L'età dell'innocenze, Edith Wharton  - DNF"
+          ]
+        },
+        {
+          "name": "playing",
+          "entries": [
+            "Chants of Shannar"]
+        },
+        {
+          "name": "watched",
+          "entries": [
+            "Long way home <3",
+            "Spotlilght"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "May",
+      "categories": [
+        {
+          "name": "read",
+          "entries": [
+            "The dispossessed, Ursula le Guin ✓",
+            "The Mysterious Affair at Styles, Agatha Christie ✓",
+            "The player of games, Iain Banks ✓",
+            "The contradictions, Sophie Yanow (GN) ✓",
+            "On Women, Susan Sontag",
+            "The city and the stars, Arthur Clarke ✓",
+            "Childhood's end, Arthur Clarke",
+            "Outline (GN) ✓"
+          ]
+        },
+        {
+          "name": "playing",
+          "entries": [
+            "UFO 50",
+            "it takes two (Mattia) ✓"
+          ]
+        },
+        {
+          "name": "watched",
+          "entries": [
+            "Long way home <3",
+            "Black bag",
+            "Cave of forgotten dreams"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "April",
+      "categories": [
+        {
+          "name": "read",
+          "entries": [
+            "The Wedding People, Alison Espach ✓",
+            "The School for Good Mothers, Jassamine Chan ✓",
+            "The fountain of paradise, Arthur Clarke ✓",
+            "The Truth About the Harry Quebert Affair, Joël Dicker ✓",
+            "What a time to be alive, Jenny Mustard  - DNF",
+            "The dispossessed, Ursula le Guin"
+          ]
+        },
+        {
+          "name": "playing",
+          "entries": [
+            "UFO 50"
+          ]
+        },
+        {
+          "name": "watched",
+          "entries": [
+            "What do we do in the shadows"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "March",
+      "categories": [
+        {
+          "name": "read",
+          "entries": [
+            "Doppelganger: A Trip Into the Mirror World, Naomi Klein",
+            "The Anthropologists, Aysegül Savas ✓",
+            "Normal People, Sally Rooney  - DNF",
+            "Frankenstein, Mary Shelley ✓",
+            "The moving finger, Agatha Christie ✓",
+            "Wellness, Nathan Hill ✓"
+          ]
+        },
+        {
+          "name": "playing",
+          "entries": [
+            "UFO 50",
+            "it takes two (Mattia)"
+          ]
+        },
+        {
+          "name": "watched",
+          "entries": [
+            "Goodbye, Lenin"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "February",
+      "categories": [
+        {
+          "name": "read",
+          "entries": [
+            "Orlando, Virginia Woolf ✓",
+            "Fahrenheit 451, Ray Bradbury ✓",
+            "Doppelganger: A Trip Into the Mirror World, Naomi Klein",
+            "Wellness, Nathan Hill"
+          ]
+        },
+        {
+          "name": "playing",
+          "entries": [
+            "Pentiment",
+            "UFO 50",
+            "it takes two (Mattia)"
+          ]
+        },
+        {
+          "name": "watched",
+          "entries": [
+            "Margin call",
+            "Live at the Comedy Store",
+            "2017",
+            "Into the inferno",
+            "Burden of dreams",
+            "The wonderful story of Henry Sugar"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "January",
+      "categories": [
+        {
+          "name": "read",
+          "entries": [
+            "Nachhaltigkeit, Marisa Becker ✓",
+            "Orlando, Virginia Woolf",
+            "Savage detectives, Bolaño ✓",
+            "Die Brüder Karamasow, Dostoevsky"
+          ]
+        },
+        {
+          "name": "playing",
+          "entries": [
+            "Transistor ✓",
+            "Fez",
+            "it takes two (Mattia)"
+          ]
+        },
+        {
+          "name": "watched",
+          "entries": [
+            "Die Hard",
+            "Die große Julie",
+            "Pirates of the Caribbean, The curse of the Black Pearl",
+            "So many /noclip documentaries"
+          ]
+        }
+      ]
+    }
+  ]
+}

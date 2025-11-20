@@ -25,6 +25,7 @@
     --bg-dark-gray: var(--gray-400);
 
     /*sizes*/
+    --size-xxs: 0.2.5rem;
     --size-xs: 0.5rem;
     --size-s: 1rem;
     --size-m: 1.5rem;
@@ -110,6 +111,10 @@ button, summary {cursor: pointer;}
 .gap--xs{gap:var(--size-xs)}
 .gap--s{gap:var(--size-s)}
 
+.justify--center {justify-content: center;}
+
+.items--end{align-items: end;}
+
 .stack--xs > * + * { margin-block-start: var(--size-xs);}
 .stack--s > * + * { margin-block-start: var(--size-s);}
 .stack--m > * + * { margin-block-start: var(--size-m);}
@@ -119,6 +124,7 @@ button, summary {cursor: pointer;}
     .flex--desk {display: flex;}
     .justify--space-between--desk {justify-content: space-between;}
     .justify--center--desk {justify-content: center;}
+    .justify--space-between--desk {justify-content: space-between;}
 
     .items--center--desk {align-items: center;}
     .reverse--desk {flex-direction: row-reverse;}
@@ -136,6 +142,7 @@ body {
     line-height: 140%;
     color: var(--text-dark);
     background-color: var(--bg-light);
+    
 }
 
 header {
@@ -150,6 +157,7 @@ main {
     padding: 1rem;
     max-width: 835px;
     margin: 0 auto;
+    min-height: 100vh;;
 }
 
 
@@ -254,6 +262,31 @@ details:hover .menu-title, details[open] .menu-title {
 }
 
 
+/*
+* === FORMS ==
+*/
+
+label {
+    display: block;
+    margin-bottom: var(--size-xxs);
+    font-size: 1rem;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+input, select {
+    display: block;
+    min-height: 2rem;
+    min-width: 2rem;
+    background-color: var(--bg-light);
+    border: 2px solid var(--bg-dark);
+}
+
+input:hover, input:focus, select:hover, select:focus {
+    outline: 2px solid var(--clr-dark);
+}
+
+
 
 /*
 * === INDEX ==
@@ -261,9 +294,9 @@ details:hover .menu-title, details[open] .menu-title {
 
 .homepage--container {
     background-image: url("../graphics/star--red.svg");
-    background-size: 500px;
+    background-size: 200px;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: top 20px center -20px ;
 }
 
 /*
@@ -271,7 +304,7 @@ details:hover .menu-title, details[open] .menu-title {
 */
 
 
-.prompts--container > summary {
+.prompts--container[open] > summary {
     margin-bottom: 2rem;
 }
 
@@ -288,6 +321,13 @@ details:hover .menu-title, details[open] .menu-title {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+
+.month-details {
+    margin-bottom: 2rem;
+}
+
 
 
 
