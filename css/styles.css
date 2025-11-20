@@ -322,11 +322,22 @@ input:hover, input:focus, select:hover, select:focus {
     margin-right: auto;
 }
 
-
+/*
+* === ARCHIVE ==
+*/
 
 .month-details {
     margin-bottom: 2rem;
 }
+
+
+@media (min-width: 700px) {
+    .category-container {
+        max-width: 260px;
+        min-width: 260px;
+    }
+}
+
 
 
 

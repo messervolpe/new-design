@@ -25,7 +25,7 @@ fetch('json/archive.json')
             }
 
             categoryList +=  `
-                <div class="stack--xs" style="max-width: 260px; min-width: 260px">
+                <div class="stack--xs category-container">
                     <h3 class="heading-3"">${categoryName}</h3>
                     <ul class="">${entryList}</ul>
                 </div>
