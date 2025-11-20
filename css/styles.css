@@ -2,7 +2,8 @@
     /*colors*/
     --black: #3E3E3E;
     --white: #FAFAF9;
-    --gray: #F3F1EF;
+    --gray-100: #F3F1EF;
+    --gray-400: #4B4B4B;
 
     --blue-100: #DBDBF9;
     --blue-200: #AFBEFD;
@@ -20,7 +21,8 @@
 
     --bg-dark: var(--black);
     --bg-light: var(--white);
-    --bg-medium: var(--gray);
+    --bg-light-gray: var(--gray-100);
+    --bg-dark-gray: var(--gray-400);
 
     /*sizes*/
     --size-xs: 0.5rem;
@@ -159,7 +161,7 @@ main {
 }
 
 .menu-title:hover {
-    background-color: var(--bg-medium);
+    background-color: var(--bg-light-gray);
 }
 
 nav {
@@ -193,7 +195,7 @@ button, a, summary {
     min-height: 2rem;
     min-width: 2rem;
     border: 1px solid transparent;
-    transition: 100ms;
+    transition: 200ms;
 }
 
 button, a {
@@ -232,10 +234,15 @@ details[open] summary svg {
 
 /* —--states-— */
 
-button:hover, a:hover, details:hover summary {
-    color: var(--text-dark);
-    background-color: var(--bg-medium);
-    border-bottom: 1px dashed var(--bg-dark);
+button:hover, .a--inverted:hover {
+    background-color: var(--bg-dark-gray);
+}
+
+
+a:hover, summary:hover {
+   
+    background-color: var(--bg-light-gray);
+    border-bottom: 1px solid var(--bg-dark);
 }
 
 .a--active {
@@ -249,15 +256,26 @@ details:hover .menu-title, details[open] .menu-title {
 
 
 /*
+* === INDEX ==
+*/
+
+.homepage--container {
+    background-image: url("../graphics/star--red.svg");
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+/*
 * === PROMPTS ==
 */
 
 
-.prompts-things > summary {
+.prompts--container > summary {
     margin-bottom: 2rem;
 }
 
-.prompts-things[open] {
+.prompts--container[open] {
     background-image: url("../graphics/star--lila.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -265,9 +283,10 @@ details:hover .menu-title, details[open] .menu-title {
 }
 
 
-.prompts-things > p, button {
+.prompts--content, .prompts--content > button {
     text-align: center;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
