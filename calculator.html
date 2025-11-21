@@ -47,23 +47,56 @@
         <main class="stack--m">
 
             <details open name="calculator">
-            <summary class="heading-2">
+            <summary class="heading-2 calculator-details">
             <svg height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(4 6)"><path d="m9.5.497 4 4.002-4 4.001"/><path d="m.5 4.5h13"/></g></svg>
             Recipes</summary>
-            <div class="">
+             <form class="js-calculator stack--s">
+
+                
+                <div class="stack--s flex--desk gap--s">
+                    <div class="">
+                        <label for="b">old portions</label>
+                        <input type="number" id="b" class="">
+                    </div>
+                    <div class="">
+                        <label for="c">new portions</label>
+                        <input type="number" id="c" class="">
+                    </div>
+                    <div class="">
+                        <label for="a">old amount</label>
+                        <input type="number" id="a" class="">
+                    </div>
+                </div>
+                <p class="p--big">new amount: <span><output for="a b c" id="result">x</output></span></p>
+                </div>
+         </form>
               
             </div>
             </details>
 
             <details name="calculator">
-            <summary class="heading-2">
+            <summary class="heading-2 calculator-details">
             <svg height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(4 6)"><path d="m9.5.497 4 4.002-4 4.001"/><path d="m.5 4.5h13"/></g></svg>
             Days since</summary>
+
+            <form class="js-dates stack--s">
+                <div class="stack--s flex--desk gap--s">
+                    <div class="">
+                        <label for="first-date">first date</label>
+                        <input type="date" id="first-date" class=" js-start-date">
+                    </div>
+                    <div class="">
+                        <label for="second-date">second date</label>
+                        <input type="date" id="second-date" class=" js-end-date">
+                    </div>                    
+                </div>
+                <p class="p--big">days since: <span><output for="js-start-date js-end-date" class="js-days-passed">0</output></span></p>
+                </div>
+             </form>
         
             </details>
 
         </main>
 </body>
-<script type="text/javascript" src="js/prompts.js"></script>
-<script type="text/javascript" src="js/shapes.js"></script>
+<script  type="text/javascript" src="js/calculator.js"></script>
 </html>

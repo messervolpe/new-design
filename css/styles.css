@@ -350,7 +350,13 @@ input:hover, input:focus, select:hover, select:focus {
 }
 
 
+/*
+* === CALCULATOR ==
+*/
 
+.calculator-details {
+    margin-bottom: 2rem;
+}
 
 
 
