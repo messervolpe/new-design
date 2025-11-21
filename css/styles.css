@@ -25,7 +25,7 @@
     --bg-dark-gray: var(--gray-400);
 
     /*sizes*/
-    --size-xxs: 0.2.5rem;
+    --size-xxs: 0.25rem;
     --size-xs: 0.5rem;
     --size-s: 1rem;
     --size-m: 1.5rem;
@@ -55,7 +55,7 @@ body {
 }
 
 img, picture {
-    width: 100%;
+    max-width: 100%;
     min-width: 0;
 }
 
@@ -167,6 +167,11 @@ main {
 
 /* — navi — */
 
+
+.menu-container > img {
+    min-width: 0;
+    }
+
 .menu-title {
     width: fit-content;
     border: 1px solid transparent;
@@ -273,9 +278,11 @@ details:hover .menu-title, details[open] .menu-title {
 label {
     display: block;
     margin-bottom: var(--size-xxs);
-    font-size: 1rem;
+    font-size: 0.75rem;
     line-height: 100%;
     text-transform: uppercase;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;   
 }
 
 input, select {
@@ -283,7 +290,7 @@ input, select {
     min-height: 2rem;
     min-width: 2rem;
     background-color: var(--bg-light);
-    border: 2px solid var(--bg-dark);
+    border: 1px solid var(--bg-dark);
 }
 
 input:hover, input:focus, select:hover, select:focus {
