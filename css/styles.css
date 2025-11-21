@@ -107,12 +107,14 @@ button, summary {cursor: pointer;}
 .m--center { margin: 0 auto;}
 
 .flex {display: flex;}
+.flex-col {flex-direction: column;}
 .flex-wrap {flex-wrap: wrap;}
 
 .gap--xs{gap:var(--size-xs)}
 .gap--s{gap:var(--size-s)}
 
 .justify--center {justify-content: center;}
+.justify--end {justify-content: end;}
 
 .items--end{align-items: end;}
 
@@ -126,6 +128,7 @@ button, summary {cursor: pointer;}
     .justify--space-between--desk {justify-content: space-between;}
     .justify--center--desk {justify-content: center;}
     .justify--space-between--desk {justify-content: space-between;}
+    .justify--end--desk {justify-content: end;}
 
     .items--center--desk {align-items: center;}
     .reverse--desk {flex-direction: row-reverse;}
